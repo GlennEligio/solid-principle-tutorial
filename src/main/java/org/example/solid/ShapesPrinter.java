@@ -8,11 +8,11 @@ public class ShapesPrinter {
 
     public ShapesPrinter(AreaCalculator areaCalculator) { this.areaCalculator = areaCalculator; }
 
-    public String json(List<Object> shapes) {
+    public String json(List<Shape> shapes) {
         return "{ sum : %s }".formatted(areaCalculator.sum(shapes));
     }
 
-    public String csv(List<Object> shapes) {
+    public String csv(List<Shape> shapes) {
         return "sum,%s".formatted(areaCalculator.sum(shapes));
     }
 }
