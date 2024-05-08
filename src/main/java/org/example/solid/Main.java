@@ -10,6 +10,6 @@ public class Main {
         Square square = new Square(5);
         List<Object> shapes = List.of(circle, square);
         int sum = areaCalculator.sum(shapes);
-        System.out.println("Sum of area = " + sum);
+        System.out.println(areaCalculator.json(shapes));
     }
 }
